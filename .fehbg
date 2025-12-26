@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-scale '/home/hec/void-dots/wallpaper/ff2.jpeg' '/home/hec/void-dots/wallpaper/juniper.jpg' 
