@@ -1,0 +1,20 @@
+#!/bin/sh
+xrandr --output HDMI-0 --off --output DP-0 --off --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x478 --rotate normal --output DP-2 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output DP-3 --off
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor DP-2 -d  β γ δ ε ζ qī η θ ι
+bspc monitor HDMI-1 -d α 
+
+bspc config border_width         4
+bspc config window_gap          15
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# Border colors
+bspc config normal_border_color "#478061"
+bspc config focused_border_color "#478061"
+bspc config urgent_border_color "#478061"
+bspc config presel_border_color "#478061"
